@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+
+    h1, p {
+      text-align: center;
+    }
+
+    .flex-container {
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      background-color: silver;
+      margin: 20px auto;
+      padding: 20px;
+      gap: 20px;
+      max-width: 1000px;
+    }
+
+    .flex-container > div {
+      background-color: white;
+      width: 300px;
+      padding: 20px;
+     
+      font-weight: bold;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    .flex-container h2 {
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 20px;
+      text-align: left;
+    }
+
+    .price {
+      margin: 10px 0;
+    }
+
+    .choose {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      text-decoration: none;
+    }
+
+    .choose:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Pricing Plans</h1>
+  <div class="flex-container">
+    <div>
+      <h2>Basic</h2>
+      <div class="price">$10/mo</div>
+      <ul>
+        <li>1 User</li>
+        <li>5 Projects</li>
+        <li>Email Support</li>
+      </ul>
+      <a href="#" class="choose">Choose Basic</a>
+    </div>
+
+    <div>
+      <h2>Pro</h2>
+      <div class="price">$29/mo</div>
+      <ul>
+        <li>5 Users</li>
+        <li>Unlimited Projects</li>
+        <li>Priority Support</li>
+      </ul>
+      <a href="#" class="choose">Choose Pro</a>
+    </div>
+
+    <div>
+      <h2>Enterprise</h2>
+      <div class="price">$99/mo</div>
+      <ul>
+        <li>Unlimited Users</li>
+        <li>All Features</li>
+        <li>24/7 Phone Support</li>
+      </ul>
+      <a href="#" class="choose">Choose Enterprise</a>
+    </div>
+  </div>
+
+</body>
+</html>
